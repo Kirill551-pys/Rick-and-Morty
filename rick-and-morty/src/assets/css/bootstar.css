@@ -1,0 +1,47 @@
+* {
+    box-sizing: inherit;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    background: rgb(32, 35, 41);
+    font-variant-ligatures: none;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    text-decoration-skip-ink: auto;
+}
+body {
+    color: hsla(0, 0%, 0%, 0.8);
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+    -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+    font-feature-settings: "kern", "liga", "clig", "calt";
+}
+html {
+    font: 112.5% / 1.625 -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*:before {
+    box-sizing: inherit;
+}
+*:after {
+    box-sizing: inherit;
+}
+
+::selection {
+    color: rgb(255, 152, 0);
+    background: rgb(32, 35, 41);
+}

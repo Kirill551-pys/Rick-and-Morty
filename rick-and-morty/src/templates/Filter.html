@@ -1,0 +1,29 @@
+<template>
+    <div>
+      <input type="text" v-model="filterName" placeholder="Имя" />
+      <select v-model="filterStatus">
+        <option value="">Статус</option>
+        <option value="Alive">Жив</option>
+        <option value="Dead">Мертв</option>
+        <option value="Unknown">Неизвестно</option>
+      </select>
+      <button @click="applyFilter">Применить</button>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    emits: ['apply-filter'],
+    data() {
+      return {
+        filterName: '',
+        filterStatus: '',
+      };
+    },
+    methods: {
+      applyFilter() {
+        this.$emit('apply-filter');
+      },
+    },
+  };
+  </script>

@@ -1,0 +1,22 @@
+<template>
+    <div>
+      <button @click="changePage(page)" v-for="page in pages" :key="page">{{ page }}</button>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    props: {
+      pages: {
+        type: Number,
+        required: true,
+      },
+    },
+    emits: ['change-page'],
+    methods: {
+      changePage(page) {
+        this.$emit('change-page', page);
+      },
+    },
+  };
+  </script>

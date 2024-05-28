@@ -1,0 +1,20 @@
+<template>
+    <div class="character-card">
+      <h2>{{ character.name }}</h2>
+      <p>Статус: {{ character.status }}</p>
+      <p>Пол: {{ character.gender }}</p>
+      <p>Вид: {{ character.species }}</p>
+      <p>Место рождения: {{ character.origin.name }}</p>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    props: {
+      character: {
+        type: Object,
+        required: true,
+      },
+    },
+  };
+  </script>
